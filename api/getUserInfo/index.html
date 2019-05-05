@@ -36,7 +36,7 @@
     
     
       
-        <title>登录 - 强智教务系统API文档</title>
+        <title>账号信息 - 强智教务系统API文档</title>
       
     
     
@@ -117,7 +117,7 @@
                 强智教务系统API文档
               </span>
               <span class="md-header-nav__topic">
-                登录
+                账号信息
               </span>
             
           
@@ -213,7 +213,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="./" title="API" class="md-tabs__link md-tabs__link--active">
+        <a href="../authUser/" title="API" class="md-tabs__link md-tabs__link--active">
           API
         </a>
       
@@ -352,70 +352,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        登录
-      </label>
-    
-    <a href="./" title="登录" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../authUser/" title="登录" class="md-nav__link">
       登录
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">目录</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" title="请求" class="md-nav__link">
-    请求
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" title="参数" class="md-nav__link">
-    参数
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" title="返回" class="md-nav__link">
-    返回
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" title="例程" class="md-nav__link">
-    例程
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -519,11 +460,70 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../getUserInfo/" title="账号信息" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        账号信息
+      </label>
+    
+    <a href="./" title="账号信息" class="md-nav__link md-nav__link--active">
       账号信息
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="请求" class="md-nav__link">
+    请求
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="参数" class="md-nav__link">
+    参数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="返回" class="md-nav__link">
+    返回
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="例程" class="md-nav__link">
+    例程
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -656,39 +656,49 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/TLingC/QZAPI/edit/master/docs/api/authUser.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/TLingC/QZAPI/edit/master/docs/api/getUserInfo.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="_1">登录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>登录帐号</p>
+                <h1 id="_1">账号信息<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>获取账号信息</p>
 <h2 id="_2">请求<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><span class="x">GET http://jwxt.xxxx.edu.cn/app.do?method=authUser&amp;xh=</span><span class="cp">{</span><span class="err">$学号</span><span class="cp">}</span><span class="x">&amp;pwd=</span><span class="cp">{</span><span class="err">$密码</span><span class="cp">}</span><span class="x"></span>
+<div class="codehilite"><pre><span></span><span class="x">GET http://jwxt.xxxx.edu.cn/app.do?method=getUserInfo&amp;xh=</span><span class="cp">{</span><span class="err">$学号</span><span class="cp">}</span><span class="x"></span>
 </pre></div>
 
 
 <h2 id="_3">参数<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><span class="nx">request</span><span class="p">.</span><span class="nx">data</span><span class="p">{</span>
-    <span class="s2">&quot;method&quot;</span><span class="o">:</span><span class="s1">&#39;authUser&#39;</span><span class="p">,</span>  <span class="c1">//必填</span>
-    <span class="s2">&quot;xh&quot;</span><span class="o">:</span><span class="s1">&#39;登陆教务系统使用的学号&#39;</span><span class="p">,</span>  <span class="c1">//必填</span>
-    <span class="s2">&quot;pwd&quot;</span><span class="o">:</span><span class="s1">&#39;登陆教务系统需要的密码&#39;</span>  <span class="c1">//必填</span>
+<div class="codehilite"><pre><span></span><span class="nx">request</span><span class="p">.</span><span class="nx">header</span><span class="p">{</span><span class="nx">token</span><span class="o">:</span><span class="s1">&#39;运行身份验证authUser时获取到的token，有过期机制&#39;</span><span class="p">},</span>
+<span class="nx">request</span><span class="p">.</span><span class="nx">data</span><span class="p">{</span>
+    <span class="s1">&#39;method&#39;</span><span class="o">:</span><span class="s1">&#39;getUserInfo&#39;</span><span class="p">,</span>  <span class="c1">//必填</span>
+    <span class="s1">&#39;xh&#39;</span><span class="o">:</span><span class="s1">&#39;201713984&#39;</span> <span class="c1">//学号，必填，可以填写非本token学号获取其他人信息</span>
 <span class="p">}</span>
 </pre></div>
 
 
 <h2 id="_4">返回<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;flag&quot;</span><span class="p">:</span><span class="s2">&quot;1&quot;</span><span class="p">,</span> <span class="err">//是否成功</span> <span class="err">#成功1</span> <span class="err">失败0</span>
-    <span class="nt">&quot;userrealname&quot;</span><span class="p">:</span><span class="s2">&quot;张三&quot;</span><span class="p">,</span> <span class="err">//用户真实姓名</span> <span class="err">#失败</span> <span class="err">null</span>
-    <span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="err">//令牌，调用其它API时需要附带到HTTP请求header中的token参数中</span> <span class="err">#失败</span> <span class="err">-1</span>
-    <span class="nt">&quot;userdwmc&quot;</span><span class="p">:</span><span class="s2">&quot;XXXX学院&quot;</span><span class="p">,</span> <span class="err">//用户所在学院名称</span> <span class="err">#失败</span> <span class="err">null</span>
-    <span class="nt">&quot;usertype&quot;</span><span class="p">:</span><span class="s2">&quot;2&quot;</span><span class="p">,</span> <span class="err">//用户类别</span> <span class="err">#已知学生身份为2</span> <span class="err">失败</span> <span class="err">null</span>
-    <span class="nt">&quot;msg&quot;</span><span class="p">:</span><span class="s2">&quot;登录成功&quot;</span> <span class="err">//返回消息</span>
+    <span class="nt">&quot;fxzy&quot;</span><span class="p">:</span> <span class="s2">&quot;无&quot;</span><span class="p">,</span>  <span class="err">//辅修专业</span>
+    <span class="nt">&quot;xh&quot;</span><span class="p">:</span> <span class="s2">&quot;201716xxxx&quot;</span><span class="p">,</span>  <span class="err">//学号</span>
+    <span class="nt">&quot;xm&quot;</span><span class="p">:</span> <span class="s2">&quot;某某某&quot;</span><span class="p">,</span>  <span class="err">//姓名</span>
+    <span class="nt">&quot;dqszj&quot;</span><span class="p">:</span> <span class="s2">&quot;2017&quot;</span><span class="p">,</span>  <span class="err">//未知</span>
+    <span class="nt">&quot;usertype&quot;</span><span class="p">:</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span>  <span class="err">//用户类型</span>
+    <span class="nt">&quot;yxmc&quot;</span><span class="p">:</span> <span class="s2">&quot;信息科学技术学院&quot;</span><span class="p">,</span>  <span class="err">//院系名称</span>
+    <span class="nt">&quot;xz&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>  <span class="err">//学制</span>
+    <span class="nt">&quot;bj&quot;</span><span class="p">:</span> <span class="s2">&quot;计算机类2017-10&quot;</span><span class="p">,</span>  <span class="err">//班级</span>
+    <span class="nt">&quot;dh&quot;</span><span class="p">:</span> <span class="s2">&quot;13600000000&quot;</span><span class="p">,</span>  <span class="err">//电话</span>
+    <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;1540000000@qq.com&quot;</span><span class="p">,</span>  <span class="err">//电子邮箱</span>
+    <span class="nt">&quot;rxnf&quot;</span><span class="p">:</span> <span class="s2">&quot;2017&quot;</span><span class="p">,</span>  <span class="err">//入学年份</span>
+    <span class="nt">&quot;xb&quot;</span><span class="p">:</span> <span class="s2">&quot;男&quot;</span><span class="p">,</span>   <span class="err">//性别</span>
+    <span class="nt">&quot;ksh&quot;</span><span class="p">:</span> <span class="s2">&quot;00000000000&quot;</span><span class="p">,</span>  <span class="err">//高考考号</span>
+    <span class="nt">&quot;nj&quot;</span><span class="p">:</span> <span class="s2">&quot;2017&quot;</span><span class="p">,</span>  <span class="err">//年级</span>
+    <span class="nt">&quot;qq&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>  <span class="err">//QQ号码</span>
+    <span class="nt">&quot;zymc&quot;</span><span class="p">:</span> <span class="s2">&quot;计算机类(计算机科学与技术、网络工程、信息安全)&quot;</span>  <span class="err">//专业名称</span>
 <span class="p">}</span>
 </pre></div>
 
 
 <h2 id="_5">例程<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>GET http://jwxt.xxxx.edu.cn/app.do?method=authUser&amp;xh=17111111&amp;pwd=1234578
+<div class="codehilite"><pre><span></span>GET http://jwxt.xxxx.edu.cn/app.do?method=getUserInfo&amp;xh=201713984
 </pre></div>
                 
                   
@@ -710,7 +720,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../support/" title="支持学校" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../getStudentIdInfo/" title="用户信息" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -719,19 +729,19 @@
                 <span class="md-footer-nav__direction">
                   后退
                 </span>
-                支持学校
+                用户信息
               </span>
             </div>
           </a>
         
         
-          <a href="../getCurrentTime/" title="时间信息" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../getXnxq/" title="学年学期信息" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   前进
                 </span>
-                时间信息
+                学年学期信息
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

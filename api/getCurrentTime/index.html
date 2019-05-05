@@ -400,14 +400,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" title="返回" class="md-nav__link">
+  <a href="#_3" title="参数" class="md-nav__link">
+    参数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="返回" class="md-nav__link">
     返回
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" title="例程" class="md-nav__link">
+  <a href="#_5" title="例程" class="md-nav__link">
     例程
   </a>
   
@@ -430,8 +437,116 @@
 
 
   <li class="md-nav__item">
-    <a href="../getKbcxAzc/" title="一周课程表" class="md-nav__link">
-      一周课程表
+    <a href="../getKbcxAzc/" title="课程信息" class="md-nav__link">
+      课程信息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../getCjcx/" title="成绩信息" class="md-nav__link">
+      成绩信息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../getKscx/" title="考试信息" class="md-nav__link">
+      考试信息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../getEarlyWarnInfo/" title="学籍预警信息" class="md-nav__link">
+      学籍预警信息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../getJxlcx/" title="教学楼信息" class="md-nav__link">
+      教学楼信息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../getKxJscx/" title="空教室信息" class="md-nav__link">
+      空教室信息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../getStudentIdInfo/" title="用户信息" class="md-nav__link">
+      用户信息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../getUserInfo/" title="账号信息" class="md-nav__link">
+      账号信息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../getXnxq/" title="学年学期信息" class="md-nav__link">
+      学年学期信息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../getXqcx/" title="校区信息" class="md-nav__link">
+      校区信息
     </a>
   </li>
 
@@ -505,14 +620,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" title="返回" class="md-nav__link">
+  <a href="#_3" title="参数" class="md-nav__link">
+    参数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="返回" class="md-nav__link">
     返回
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" title="例程" class="md-nav__link">
+  <a href="#_5" title="例程" class="md-nav__link">
     例程
   </a>
   
@@ -534,17 +656,26 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/TLingC/QZAPI/edit/master/api/getCurrentTime.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/TLingC/QZAPI/edit/master/docs/api/getCurrentTime.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                 <h1 id="_1">时间信息<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>获取当前时间、周次、学年等信息</p>
+<p>获取所提交的日期的时间、周次、学年等信息</p>
 <h2 id="_2">请求<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><span class="x">GET http://jwxt.xxx.edu.cn/app.do?method=getCurrentTime&amp;currDate=</span><span class="cp">{</span><span class="err">$查询日期</span><span class="cp">}</span><span class="x"></span>
+<div class="codehilite"><pre><span></span><span class="x">GET http://jwxt.xxxx.edu.cn/app.do?method=getCurrentTime&amp;currDate=</span><span class="cp">{</span><span class="err">$查询日期</span><span class="cp">}</span><span class="x"></span>
 </pre></div>
 
 
-<h2 id="_3">返回<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="_3">参数<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><span class="nx">request</span><span class="p">.</span><span class="nx">header</span><span class="p">{</span><span class="nx">token</span><span class="o">:</span><span class="s1">&#39;运行身份验证authUser时获取到的token，有过期机制&#39;</span><span class="p">},</span>
+<span class="nx">request</span><span class="p">.</span><span class="nx">data</span><span class="p">{</span>
+    <span class="s1">&#39;method&#39;</span><span class="o">:</span><span class="s1">&#39;getCurrentTime&#39;</span><span class="p">,</span>  <span class="c1">//必填</span>
+    <span class="s1">&#39;currDate&#39;</span><span class="o">:</span>  <span class="c1">//格式为&quot;YYYY-MM-DD&quot;，必填，留空调用成功，但返回值均为null</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h2 id="_4">返回<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;zc&quot;</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="err">//当前周次</span>
     <span class="nt">&quot;e_time&quot;</span><span class="p">:</span><span class="s2">&quot;2019-01-20&quot;</span><span class="p">,</span> <span class="err">//本周结束时间</span>
@@ -554,8 +685,8 @@
 </pre></div>
 
 
-<h2 id="_4">例程<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>GET http://jwxt.xxx.edu.cn/app.do?method=getCurrentTime&amp;currDate=2019-01-14
+<h2 id="_5">例程<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>GET http://jwxt.xxxx.edu.cn/app.do?method=getCurrentTime&amp;currDate=2019-01-14
 </pre></div>
                 
                   
@@ -592,13 +723,13 @@
           </a>
         
         
-          <a href="../getKbcxAzc/" title="一周课程表" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../getKbcxAzc/" title="课程信息" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   前进
                 </span>
-                一周课程表
+                课程信息
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
